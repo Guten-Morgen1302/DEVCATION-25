@@ -14,21 +14,21 @@ import { HoverCard, HoverCardTrigger, HoverCardContent } from '@/components/ui/h
 const judges = [
   {
     name: 'Kartik Mathur',
-    image: 'https://ext.same-assets.com/844291147/1743763944.svg',
+    image: 'https://devcation-2025.vercel.app/Kartik.jpeg',
     role: 'Lead Judge',
     linkedIn: 'https://www.linkedin.com/in/kartik-mathur/',
     bio: 'Experienced tech professional with expertise in system architecture and AI applications.'
   },
   {
     name: 'Vani Chitkara',
-    image: 'https://ext.same-assets.com/844291147/1354271685.svg',
+    image: 'https://devcation-2025.vercel.app/vani.jpeg',
     role: 'Technical Judge',
     linkedIn: 'https://www.linkedin.com/in/vani-chitkara/',
     bio: 'Specialist in software engineering and emerging tech innovations.'
   },
   {
     name: 'Aarnav Jindal',
-    image: 'https://ext.same-assets.com/844291147/395157150.svg',
+    image: 'https://devcation-2025.vercel.app/aarnav.jpg',
     role: 'Industry Judge',
     linkedIn: 'https://www.linkedin.com/in/aarnavjindal/',
     bio: 'Industry leader focusing on market impact and business viability.'
@@ -39,49 +39,49 @@ const judges = [
 const mentors = [
   {
     name: 'Radhika Bansal',
-    image: 'https://ext.same-assets.com/844291147/1443725800.svg',
+    image: 'https://devcation-2025.vercel.app/mentors/RadhikaBansal_Devcation.jpeg',
     linkedIn: 'https://www.linkedin.com/in/radhika403/',
     expertise: 'Frontend Development'
   },
   {
     name: 'Sanidhya Goel',
-    image: 'https://ext.same-assets.com/844291147/3114313562.svg',
+    image: 'https://devcation-2025.vercel.app/mentors/SanidhyaGoel.jpeg',
     linkedIn: 'https://www.linkedin.com/in/sanidhyagoel18/',
     expertise: 'Machine Learning'
   },
   {
     name: 'Tejaswi Tyagi',
-    image: 'https://ext.same-assets.com/844291147/409235749.svg',
+    image: 'https://devcation-2025.vercel.app/mentors/TejaswiTyagi_Mentor.jpg',
     linkedIn: 'https://www.linkedin.com/in/tejaswi-tyagi/',
     expertise: 'UI/UX Design'
   },
   {
     name: 'Akanksha Jha',
-    image: 'https://ext.same-assets.com/844291147/2781346206.svg',
+    image: 'https://devcation-2025.vercel.app/mentors/AkankshaJha_Mentor.jpg',
     linkedIn: 'https://www.linkedin.com/in/akanksha-jha-8609a422a',
     expertise: 'Backend Development'
   },
   {
     name: 'Vikranth Udandarao',
-    image: 'https://ext.same-assets.com/844291147/3225579771.svg',
+    image: 'https://devcation-2025.vercel.app/mentors/VikranthUdandarao_Mentor.jpg',
     linkedIn: 'https://www.linkedin.com/in/vikranth-udandarao/',
     expertise: 'Cloud Computing'
   },
   {
     name: 'Rudra Pratap Dash',
-    image: 'https://ext.same-assets.com/844291147/286459257.svg',
+    image: 'https://devcation-2025.vercel.app/mentors/RudraPratapDash.jpg',
     linkedIn: 'https://www.linkedin.com/in/rudra-pratap-dash-b2ab16267/',
     expertise: 'DevOps'
   },
   {
     name: 'Aishvi Guleria',
-    image: 'https://ext.same-assets.com/844291147/2895575613.svg',
+    image: 'https://devcation-2025.vercel.app/mentors/Aishvi.png',
     linkedIn: 'https://www.linkedin.com/in/aishvi-guleria-09a04222b',
     expertise: 'Mobile Development'
   },
   {
     name: 'Pratham Batra',
-    image: 'https://ext.same-assets.com/844291147/3160495444.svg',
+    image: 'https://devcation-2025.vercel.app/mentors/PrathamBatra_Mentor.jpeg',
     linkedIn: 'https://www.linkedin.com/in/pratham1908/',
     expertise: 'Data Science'
   },
