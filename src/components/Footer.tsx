@@ -138,7 +138,7 @@ export function Footer() {
 
         <div className="border-t border-neon-blue/20 mt-10 pt-6 text-center text-gray-500 text-sm">
           <p>© {new Date().getFullYear()} Devcation. All rights reserved.</p>
-          <p className="mt-1">Made with 💻 by GDG IGDTUW</p>
+          <p className="mt-1">Made by Harsh Dev💻</p>
         </div>
       </div>
     </footer>
