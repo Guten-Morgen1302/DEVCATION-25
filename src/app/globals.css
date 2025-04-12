@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 236 85% 5%;
+    --foreground: 210 40% 98%;
+    --card: 236 50% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 236 50% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 263 85% 50%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 180 100% 50%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 237 30% 15%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 326 100% 60%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 237 24% 20%;
+    --input: 237 24% 20%;
+    --ring: 263 85% 50%;
+    --radius: 0.5rem;
+
+    /* Cyberpunk theme colors */
+    --neon-blue: 195 100% 50%;
+    --neon-purple: 280 100% 65%;
+    --neon-pink: 326 100% 60%;
+    --neon-cyan: 180 100% 50%;
+    --neon-yellow: 55 100% 60%;
+
+    /* Chart colors */
+    --chart-1: 195 100% 50%;
+    --chart-2: 280 100% 65%;
+    --chart-3: 326 100% 60%;
+    --chart-4: 55 100% 60%;
+    --chart-5: 180 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image:
+      radial-gradient(circle at 50% 50%,
+      hsla(var(--neon-purple) / 0.15) 0%,
+      transparent 40%),
+      radial-gradient(circle at 80% 10%,
+      hsla(var(--neon-pink) / 0.1) 0%,
+      transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .neon-text {
+    text-shadow:
+      0 0 5px hsla(var(--neon-blue) / 0.8),
+      0 0 10px hsla(var(--neon-blue) / 0.5),
+      0 0 15px hsla(var(--neon-blue) / 0.3);
+  }
+
+  .neon-text-pink {
+    text-shadow:
+      0 0 5px hsla(var(--neon-pink) / 0.8),
+      0 0 10px hsla(var(--neon-pink) / 0.5),
+      0 0 15px hsla(var(--neon-pink) / 0.3);
+  }
+
+  .neon-text-cyan {
+    text-shadow:
+      0 0 5px hsla(var(--neon-cyan) / 0.8),
+      0 0 10px hsla(var(--neon-cyan) / 0.5),
+      0 0 15px hsla(var(--neon-cyan) / 0.3);
+  }
+
+  .neon-border {
+    position: relative;
+  }
+
+  .neon-border::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    box-shadow:
+      0 0 5px hsla(var(--neon-blue) / 0.8),
+      0 0 10px hsla(var(--neon-blue) / 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .neon-border:hover::after {
+    opacity: 1;
+  }
+
+  .neon-border-cyan::after {
+    box-shadow:
+      0 0 5px hsla(var(--neon-cyan) / 0.8),
+      0 0 10px hsla(var(--neon-cyan) / 0.5);
+  }
+
+  .neon-border-pink::after {
+    box-shadow:
+      0 0 5px hsla(var(--neon-pink) / 0.8),
+      0 0 10px hsla(var(--neon-pink) / 0.5);
+  }
+
+  .neon-border-purple::after {
+    box-shadow:
+      0 0 5px hsla(var(--neon-purple) / 0.8),
+      0 0 10px hsla(var(--neon-purple) / 0.5);
+  }
+
+  .glitch-effect {
+    position: relative;
+    animation: glitch 5s infinite;
+  }
+
+  .backdrop-blur-gradient {
+    backdrop-filter: blur(10px);
+    background: rgba(13, 13, 35, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-card {
+    background: rgba(20, 20, 45, 0.5);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  1% {
+    transform: translate(-2px, 2px);
+  }
+  2% {
+    transform: translate(2px, -2px);
+  }
+  3% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(0);
+  }
+  11% {
+    transform: translate(-1px, -1px);
+  }
+  12% {
+    transform: translate(1px, 1px);
+  }
+  13% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('/fonts/Orbitron.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
